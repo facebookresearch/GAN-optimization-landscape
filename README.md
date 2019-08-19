@@ -21,3 +21,17 @@ For any questions regarding the code please contact Hugo Berard (berard.hugo@gma
 This source code is licensed under the MIT license found in the
 LICENSE file in the root directory of this source tree.
 
+## Running the Code
+
+We provide a conda environment to run the code:
+`conda create -f mnist-exp_environment.yml`
+
+The code for computing the eigenvalues and the path-angle is in `plot_path_tools.py`.
+
+To run the code for the Mixture of Gaussian experiment:
+`python train_mixture_gan.py OUTPUT_PATH --deterministic --saving-stats`
+
+To run the code for the MNIST experiment:
+`python train_mnist.py`
+
+The visualization of the results can be done with `mnist_plots.ipynb`
